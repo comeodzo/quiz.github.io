@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Survie Demon Slayer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz de Survie Demon Slayer</h1>
+        <div id="question-container">
+            <h2>Choisis ton Souffle :</h2>
+            <div class="option" onclick="selectOption('Eau')">
+                <img src="eau.jpg" alt="Souffle de l'Eau">
+                <p>Souffle de l'Eau</p>
+            </div>
+            <div class="option" onclick="selectOption('Foudre')">
+                <img src="foudre.jpg" alt="Souffle de la Foudre">
+                <p>Souffle de la Foudre</p>
+            </div>
+            <div class="option" onclick="selectOption('Flamme')">
+                <img src="flamme.jpg" alt="Souffle de la Flamme">
+                <p>Souffle de la Flamme</p>
+            </div>
+            <div class="option" onclick="selectOption('Bête')">
+                <img src="bete.jpg" alt="Souffle de la Bête">
+                <p>Souffle de la Bête</p>
+            </div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Ton Résultat</h2>
+            <p id="result"></p>
+            <button onclick="restartQuiz()">Recommencer le Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
